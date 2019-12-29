@@ -1,0 +1,44 @@
+body{
+	text-align: center;
+	background-image: url("http://localhost:8080/images/background.jpg");
+}
+
+.reContainer{
+	margin-top: 250px;
+
+	height: 300px;
+	text-align: center;
+	display: inline-block;
+	width: 500px;
+	padding-top:5px;
+	border: 3px solid;
+	border-radius:10px;
+	opacity:0.95;
+	max-width:600px;
+	font-size:20px;
+	border-color: black;
+}
+
+.ele{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.ele label{
+	color:white;
+}
+
+.reContainer button {
+    background-color: white;
+    color: black;
+    padding: 5px 8px;
+    margin: 30px 0;
+    border: 1px solid;
+    cursor: pointer;
+    width: 20%;
+	border-color: black;
+}
+
+#warning {
+	color: red
+}

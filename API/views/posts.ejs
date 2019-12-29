@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./../Post/post.js"></script>
+    <link rel="stylesheet" type="text/css" href="./../Post/posts.css">
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+</head>
+
+<body>
+    <div class="container">
+        <% posts.forEach(function(post){ %>
+            <div>
+                <a href="/posts/<%= post.pid %>">
+                    <div class="col-md-8">
+                        <h4>
+                            <%= post.postTitle %>
+                        </h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <%= post.postDate %>
+                        </h4>
+                    </div>
+                </a>
+                <%  }) %>
+            </div>
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>

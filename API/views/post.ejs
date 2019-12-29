@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./../Post/post.css">
+  <script src="./../Post/post.js"></script>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+</head>
+
+<body>
+  <div class="container">
+    <div class="postContainer">
+      <h1 id="postTitle">
+        <%= post.postTitle %>
+      </h1>
+      <p id="postUser">
+        Poster:
+        <%= username.username %>
+      </p>
+      <h4 id="postContent">Content:
+        <%= post.postContent %>
+      </h4>
+    </div>
+    <div class="postDetail">
+      <h3>House Information</h3>
+      <ul class="postDetailUl">
+        <li class="postDetailItem" id="postPrice">
+          Price:
+          <%= RentOutPost[0].price %>
+        </li>
+        <li class="postDetailItem" id="postAddress">Address:
+          <%= RentOutPost[0].address+", "+ RentOutPost[0].city+", "+RentOutPost[0].province%>
+        </li>
+        </li>
+        <li class="postDetailItem" id="rentSize">Number of Rooms:
+          <%= RentOutPost[0].size %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="postImageContainer">
+      <img src= "<%= (postImage ? 'http://localhost:8080/images/' + postImage : '') %>"  alt="">
+    </div>
+
+    <div class="commentContainer">
+      <h3>Comments</h3>
+      <div class="list-group">
+        <% comments.forEach(function(comment){ %>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start commentItem">
+            <p class="mb-1">
+              <%= comment.commentContent %>
+            </p>
+            <small class="commentDateText">
+              <%= comment.commentDate %>
+            </small>
+          </div>
+          <%  }) %>
+
+      </div>
+    </div>
+
+    <div class="newCommentContainer">
+      <div id="warning" style="display:none">
+        <span class="glyphicon glyphicon-info-sign"></span>
+        <label></label>
+      </div>
+      <textarea name="name" rows="8" cols="80" id="comment"></textarea>
+      <button type="submit" class="btn btn-primary" id="replyBtn">Reply</button>
+    </div>
+
+  </div>
+</body>
+
+</html>

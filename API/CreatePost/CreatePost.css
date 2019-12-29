@@ -1,0 +1,50 @@
+body{
+	background-image:url('http://localhost:8080/images/background.jpg')
+}
+
+.main_con *{
+	font-size: 20px;
+	color:white;
+}
+.main_con input{
+	color:black;
+}
+.title
+{
+	padding: 10px;
+	color:white;
+}
+
+.list
+{
+	margin-bottom: 30px;
+}
+.inInfo
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.outInfo
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.submitOp
+{
+	margin-top: 3px;
+	color:black;
+}
+
+.main_con{
+	margin-left: 30px;
+}
+
+.submit
+{
+	color:black;
+    margin-bottom: 5px;
+}
+
+

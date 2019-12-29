@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./../Registeration/Registeration.css">
+<!--our script-->
+<script src="./../Registeration/Registeration.js"></script>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+</head>
+<body>
+	<div class="reContainer">
+		<div id="warning" style="display:none"><span class="glyphicon glyphicon-info-sign"></span> <label></label></div>
+		<div class="ele">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+		</div>
+		<div class="ele">
+			<label for="email"><b>E-mail&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+			<input type="text" placeholder="Enter E-mail" name="email" required>
+		</div>
+		<div class="ele">
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+		</div>
+		<button type="submit" onclick="register();">Register</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Full-width input fields */
+.modal input[type=text],
+.modal input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.modal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+.modal .closecontainer {
+	max-width: 800px;
+	text-align: right;
+	position: relative;
+}
+
+.modal .container {
+    padding: 16px;
+	max-width: 800px;
+}
+
+.modal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    max-width: 800px; /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+.modal .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+@keyframes pop-login-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+	}
+    to {
+        opacity: 1;
+        transform : translateY(0);
+    }
+}
+
+.model .displayModal {
+    display: block;
+    animation: new-item-animation .3s linear forwards;
+}
+
+.model .hideModal {
+    display: none;
+}
+
+.modal #warning {
+    color: red
+}

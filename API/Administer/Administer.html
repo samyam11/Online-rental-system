@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Custome script-->
+    <link rel="stylesheet" type="text/css" href="./../Administer/Administer.css">
+    <script src="./../Administer/Administer.js"></script>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+</head>
+<body>
+    <div class='administerWrapper'>
+	    <div class='administerContent'>
+            <div class="contentBlock">
+                <label>Query</label>
+                <div id='sqloptions'>
+                    <button type="button" class="btn btn-primary" id="reply_all_post"> Division - Who reply all post</button>
+                    <button type="button" class="btn btn-primary" id="post_below_average"> Nested - House below average price</button>
+                    <button type="button" class="btn btn-primary" id="average_price"> Average Price</button>
+                    <button type="button" class="btn btn-primary" id="below_average_by_city"> House below average price by City</button>
+                </div>
+                <textarea class="form-control" rows="10" id="sqlquery" placeholder="Enter SQL query to obtain information"></textarea>
+            </div>
+            <button type="button" class="btn btn-success execute"> Execute</button>
+            <div class="contentBlock"> 
+                <label>Results</label>
+                <table class="table table-bordered" id='result'>
+                    <thead><tr><th>No result</th></tr></thead>
+                </table>
+            </div>
+            <div class="contentBlock">
+                <label>Account Freeze Control</label>
+                <input type="text" class="form-control" id="freezeAccount" placeholder="Enter the account id you want to freeze">
+                <button type="button" class="btn btn-success freeze" onclick="freezeAccount();"> Freeze</button>
+            </div>
+            <div class="contentBlock">
+                <label>Delete Post</label>
+                <input type="text" class="form-control" id="deletePost" placeholder="Enter the post id you want to delete">
+                <button type="button" class="btn btn-danger delete" onclick="deletePost();"> Delete</button>
+            </div>
+		</div>
+    </div>
+</body>
+</html>

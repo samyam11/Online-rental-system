@@ -1,0 +1,35 @@
+html, body {
+    background-color: #aaa !important;
+}
+
+.administerWrapper {
+    text-align: center;
+}
+
+.administerContent {
+    background: #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%; 
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.administerContent table,
+.administerContent table * {
+    border-color: black !important;
+}
+
+.administerContent label {
+    font-size: 20px;
+}
+
+.administerContent .contentBlock {
+    margin-bottom: 5px;
+}
+
+.administerContent button {
+    margin: 5px;
+}

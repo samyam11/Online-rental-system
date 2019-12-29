@@ -1,0 +1,44 @@
+.searchBar {
+	display: inline-block;
+	text-align: left;
+	width: 500px;
+	font-size: 20px;
+	white-space: normal;
+	word-wrap: break-word;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.searchBar .form-group {
+	margin-bottom: 5px
+}
+
+.searchBar .form-group label {
+	color: #ddd;
+}
+
+.searchBar-text {
+	width: calc(100% - 40px) !important;
+	height: 100%;
+	border: none;
+	padding-left: 10px;
+	background-color: #BBBBBB;
+}
+
+.searchBar-button {
+	background-color: #AAAAAA;
+}
+
+.searchBar-text:focus,
+.searchBar-button:focus {
+	outline: none;
+}
+
+.searchBar-button:active {
+	outline: none;
+}
+
+.searchView {
+	margin-top: 20px;
+	text-align: center;
+}

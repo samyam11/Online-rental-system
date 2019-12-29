@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<title>House Rental</title>
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--our css file-->
+<link rel="stylesheet" type="text/css" href="./../Search/SearchOption.css">
+<link rel="stylesheet" type="text/css" href="./../Search/SearchBar.css">
+<link rel="stylesheet" type="text/css" href="./../Search/Residence-unit.css">
+<!--our script-->
+<script src="./../Search/SearchPageScript.js"></script>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+</head>
+
+<body>
+	<div class="searchView">
+		<!--Search Option-->
+		<div class="btn-group searchOption" data-toggle="buttons">
+			<label class="btn btn-primary active">
+				<input type="radio" autocomplete="off"> Rent out <span class="glyphicon glyphicon-home"></span>
+			</label>
+			<label class="btn btn-primary">
+				<input type="radio" autocomplete="off"> Rent in <span class="glyphicon glyphicon-user"></span>
+			</label>
+		</div>
+		<!--Search Bar-->
+		<br>
+		<div class="searchBar">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="price">Price</label>
+					<input type="text" class="form-control" id="price_input" placeholder="1000..">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="city">City</label>
+					<input type="text" class="form-control" id="city_input" placeholder="..">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="size">Room Number</label>
+					<input type="text" class="form-control" id="room_num_input" placeholder="2..">
+				</div>
+				<div class="form-group col-md-6">
+					<label>Click to search</label>
+					<button id="searchButton" class="searchBar-button form-control" type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+			</div>
+
+		</div>
+		<!--intuitive text-->
+		<div>
+			<label class="form-text text-muted">Enter any criteras you like to include in search</label><br>
+			<label class="form-text text-muted">Example: 3000NRS Kathmandu200ft</label>
+		</div>
+		<!--residence elements-->
+		<div class="residence-list">
+			<ul></ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  background-image: url("http://localhost:8080/images/background.jpg");
+}
+#warning {
+  color: red;
+}
+.postContainer {
+  color: white;
+}
+.commentItem:hover {
+  background-color: #f2f2f2;
+}
+.commentDateText {
+  color: grey;
+}
+.postDetailUl {
+  padding: 0;
+}
+.postDetail {
+  margin-top: 50px;
+  color: white;
+}
+.postDetailUl li {
+  list-style: none;
+}
+.commentContainer {
+  margin-top: 50px;
+}
+.commentContainer h3 {
+  color: white;
+}
+.commentContainer p {
+  color: #333;
+}
+.newCommentContainer {
+  height: 200px;
+}
+textarea {
+  float: left;
+  height: 150px;
+  color: #333;
+}

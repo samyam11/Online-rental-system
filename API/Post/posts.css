@@ -1,0 +1,10 @@
+.postList li {
+  list-style: none;
+}
+body {
+  background-image: url("http://localhost:8080/images/background.jpg");
+  color: white !important;
+}
+a {
+  color: white !important;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<title>create your own post</title>
+	<link rel="stylesheet" href="CreatePost.css" />
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./../CreatePost/CreatePost.js"></script>
+	<!--Navigation bar-->
+	<div id="nav-placeholder"></div>
+</head>
+
+<body>
+
+	<h3 class="title">Free personal advertisement</h3>
+
+	<div class="main_con">
+		<form class="main" name="main_post" action="" method="post">
+
+			<form class="list" method="post" action="">
+				choose your option:
+				<br/>
+				<div class="rentIn">
+					<input type="radio" name="user" id="rentIn" value="rentIn">rent in</div>
+				<div class="rentOut">
+					<input type="radio" name="user" id="rentOut" value="rentOut">rent out</div>
+			</form>
+
+			<div class="submitOp">
+				<input type="button" value="Ready!" name="submitOp" id="submitOp" />
+			</div>
+
+			<form class="inInfo" method="post" action="">
+				<div class="inTitle">
+					Post Title:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="inTitle" placeholder="Enter the title for rent" />
+				</div>
+				<div class="min">
+					Min price:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="Lprice" placeholder="in NRS" />
+				</div>
+				<div class="max">
+					Max price:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="Uprice" placeholder="in NRS" />
+				</div>
+				<div class="bedroom">
+					Bedroom:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="numOfBed" placeholder="# of bedroom you prefer" />
+				</div>
+
+				<div class="inContent">
+					content:
+					<br/>
+					<textarea id="inArea" style="width:700px; height:120px; color:black" name="content" placeholder="Enter additional information"></textarea>
+				</div>
+			</form>
+
+			<form class="outInfo" method="post" action="">
+				<div class="outTitle">
+					Post Title:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="outTitle" placeholder="Enter the title for rent out" />
+				</div>
+				<div class="price">
+					Price:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="price" placeholder="in NRS" />
+				</div>
+				<div class="size">
+					Size:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="size" placeholder="(enter an integer:) # of bedroom only"
+					/>
+				</div>
+				<div class="address">
+					House address:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="address" />
+				</div>
+				<div class="city">
+					City:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="city" />
+				</div>
+				<div class="province">
+					Province:
+					<br/>
+					<input type="text" style="width:700px; color:black" name="province" />
+				</div>
+
+				<div class="upload">Upload images:
+					<br/>
+					<input id="file" class="file" type="file" accept="image/jpeg,image/png,image/gif" />
+				</div>
+
+				<div class="outContent">
+					content:
+					<br/>
+					<textarea id="outArea" style="width:700px; height:120px; color:black" name="content" placeholder="Enter additional information"></textarea>
+				</div>
+			</form>
+
+
+			<div class="submit">
+				<input type="button" value="submit" name="submit" id="submit" />
+			</div>
+
+		</form>
+	</div>
+</body>
